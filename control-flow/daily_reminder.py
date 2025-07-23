@@ -5,16 +5,16 @@ while True:
 
     match priority:
         case "high":
-            reminder = f"Reminder: '{task}' is a high priority task"
+            base_reminder = f"Reminder: '{task}' is a high priority task"
         case "medium":
-            reminder = f"Reminder: '{task}' is a medium priority task"
+            base_reminder = f"Reminder: '{task}' is a medium priority task"
         case "low":
-            reminder = f"Note: '{task}' is a low priority task"
+            base_reminder = f"Note: '{task}' is a low priority task"
 
     if time_bound.lower() == "yes":
-        print(f"{reminder} that requires immediate attention today!")
+        print(f"{base_reminder} that requires immediate attention today!")
     else:
-        print(f"{reminder}. Consider completing it when you have free time.")
+        print(f"{base_reminder}. Consider completing it when you have free time.")
 
     again = input("Run again? (yes/no): ")
     if again.lower() != "yes":
