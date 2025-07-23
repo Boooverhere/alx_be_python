@@ -11,7 +11,7 @@ while True:
         case "low":
             base_reminder = f"Note: '{task}' is a low priority task"
 
-    if time_bound.lower() == "yes":
+    if time_bound == "yes":
         print(f"{base_reminder} that requires immediate attention today!")
     else:
         print(f"{base_reminder}. Consider completing it when you have free time.")
